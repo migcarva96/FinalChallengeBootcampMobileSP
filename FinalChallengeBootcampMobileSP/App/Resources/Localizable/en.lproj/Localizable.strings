@@ -1,0 +1,66 @@
+/* 
+  Localizable.strings
+  Sophos
+
+  Created by Miguel Urrea on 2/12/22.
+  
+*/
+
+localizable-Languages = "en";
+
+// MARK: Loader
+loader-message = "Processing...\nwait a moment please.";
+
+// MARK: Authentication
+login-button-key = "Login";
+fingerprint-login-button-key = "Login with fingerprint";
+email-text-key = "Email";
+password-text-key = "Password";
+title-login-label-key = "Enter your data to access";
+empty-fields-message = "The fields must be filled in";
+wrong-email-message = "The email is incorrect.";
+wrong-password-message = "The email or password are incorrect.";
+touchid-unavailable-title = "Unavailable";
+touchid-unavailable-message = "You can't use this feature.";
+touchid-failed-title = "Failed authentication";
+touchid-failed-message = "Please try again.";
+touchid-empty-title = "Incomplete fields";
+touchid-empty-message = "To configure biometric authentication you must log in with your email and password.";
+touchid-reason-message = "Please authorize with biometric request to login.";
+
+// MARK: Home
+welcome-label-key = "Welcome";
+home-label-key = "These are the options we have for you";
+send-documents-label-key = "Send documents";
+view-documents-label-key = "View documents";
+offices-label-key = "Offices";
+go-button-title-key = "Get into";
+
+//MARK: Send Documents
+send-documents-title-label-key = "Document delivery";
+id-type-text-key = "Id type";
+id-number-text-key = "Id number";
+names-text-key = "Names";
+lastnames-text-key = "Lastnames";
+document-title-key = "File title";
+city-text-key = "City";
+document-button-key = "Document";
+send-button-key = "Send";
+empty-image-message = "You must select an image to continue.";
+open-camera-title = "Select image";
+open-camera-message = "Select between taking a photo or uploading image.";
+load-photo-message = "Upload photo";
+take-photo = "Take photo";
+cancel-title = "Cancel";
+send-document-message = "Successful document submission.";
+
+// MARK: View Documents
+view-documents-title-label-key = "Documents";
+empty-view-documents-label-key = "You don't have documents to view";
+
+// MARK: Menu
+back-button-key = "Back";
+light-mode-button-key = "Light mode";
+dark-mode-button-key = "Dark mode";
+language-button-key = "Spanish language";
+log-out-button-key = "Log out";

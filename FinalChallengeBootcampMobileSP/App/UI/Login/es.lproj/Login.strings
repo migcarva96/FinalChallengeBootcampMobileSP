@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; normalTitle = "Ingresar"; ObjectID = "1M9-gU-bBX"; */
+"1M9-gU-bBX.normalTitle" = "Ingresar";
+
+/* Class = "UILabel"; text = "Ingresa tus datos para acceder"; ObjectID = "54E-pB-uMU"; */
+"54E-pB-uMU.text" = "Ingresa tus datos para acceder";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "DzO-kN-Ydk"; */
+"DzO-kN-Ydk.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "Onh-cj-nVP"; */
+"Onh-cj-nVP.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "SQ8-VG-aNg"; */
+"SQ8-VG-aNg.placeholder" = "Email";
+
+/* Class = "UIButton"; normalTitle = "Ingresar con Huella"; ObjectID = "c37-3t-sJa"; */
+"c37-3t-sJa.normalTitle" = "Ingresar con Huella";

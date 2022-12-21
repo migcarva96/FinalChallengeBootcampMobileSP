@@ -1,0 +1,66 @@
+/* 
+  Localizable.strings
+  Sophos
+
+  Created by Miguel Urrea on 2/12/22.
+  
+*/
+
+localizable-Languages = "es";
+
+// MARK: Loader
+loader-message = "Procesando...\nespere un momento por favor.";
+
+// MARK: Authentication
+login-button-key = "Ingresar";
+fingerprint-login-button-key = "Ingresar con huella";
+email-text-key = "Correo electrónico";
+password-text-key = "Contraseña";
+title-login-label-key = "Ingresa tus datos para acceder";
+empty-fields-message = "Los campos deben estar diligenciados.";
+wrong-email-message = "El correo electrónico es incorrecto.";
+wrong-password-message = "El correo electrónico o la contraseña son incorrectos.";
+touchid-unavailable-title = "No disponible";
+touchid-unavailable-message = "No puedes utilizar esta función.";
+touchid-failed-title = "Autenticación fallida";
+touchid-failed-message = "Inténtalo de nuevo.";
+touchid-empty-title = "Campos incompletos";
+touchid-empty-message = "Para configurar la autenticación biometrica debés iniciar sesión con tu correo electrónico y contraseña.";
+touchid-reason-message = "Por favor autorice con solicitud biométrica para iniciar sesión.";
+
+// MARK: Home
+welcome-label-key = "Bienvenido";
+home-label-key = "Estas son las opciones que tenemos para ti";
+send-documents-label-key = "Enviar documentos";
+view-documents-label-key = "Ver documentos";
+offices-label-key = "Oficinas";
+go-button-title-key = "Ingresar";
+
+//MARK: Send Documents
+send-documents-title-label-key = "Envío de documentación";
+id-type-text-key = "Tipo de documento";
+id-number-text-key = "Número de documento";
+names-text-key = "Nombres";
+lastnames-text-key = "Apellidos";
+document-title-key = "Título de archivo";
+city-text-key = "Ciudad";
+document-button-key = "Documento";
+send-button-key = "Enviar";
+empty-image-message = "Debes seleccionar una imagen para continuar.";
+open-camera-title = "Seleccionar imagen";
+open-camera-message = "Selecciona entre tomar foto o subir imagen.";
+load-photo-message = "Subir foto";
+take-photo = "Tomar foto";
+cancel-title = "Cancelar";
+send-document-message = "Envío de documento exitoso.";
+
+// MARK: View Documents
+view-documents-title-label-key = "Documentos";
+empty-view-documents-label-key = "No tienes documentos para visualizar";
+
+// MARK: Menu
+back-button-key = "Regresar";
+light-mode-button-key = "Modo día";
+dark-mode-button-key = "Modo nocturno";
+language-button-key = "Idioma inglés";
+log-out-button-key = "Cerrar sesión";

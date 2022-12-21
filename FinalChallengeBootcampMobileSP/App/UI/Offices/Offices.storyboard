@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Offices View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="OfficesViewController" customModule="Sophos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlB-iM-CcH">
+                                <rect key="frame" x="20" y="59" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="R6h-4l-UP6"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Regresar" image="arrowLeftIconLight"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="aHU-th-I7W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHa-J1-9Hz">
+                                <rect key="frame" x="333" y="59" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xJm-Hb-MVG"/>
+                                    <constraint firstAttribute="width" constant="50" id="zQ7-sq-9gh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="line.3.horizontal" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="bold"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="menuButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cB7-Qk-TJi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWe-0T-1M0">
+                                <rect key="frame" x="180" y="119" width="33" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zQ5-D1-eOP">
+                                <rect key="frame" x="0.0" y="150" width="393" height="702"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zQ5-D1-eOP" secondAttribute="bottom" id="110-C9-vdP"/>
+                            <constraint firstItem="zQ5-D1-eOP" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="6TA-E5-vG4"/>
+                            <constraint firstItem="mWe-0T-1M0" firstAttribute="top" secondItem="FlB-iM-CcH" secondAttribute="bottom" constant="10" id="DYa-4b-b66"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZHa-J1-9Hz" secondAttribute="trailing" constant="10" id="GkR-wE-gp9"/>
+                            <constraint firstItem="FlB-iM-CcH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="LUc-Nt-NDQ"/>
+                            <constraint firstItem="mWe-0T-1M0" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="R6y-cE-gSZ"/>
+                            <constraint firstItem="ZHa-J1-9Hz" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="T18-UC-Jzy"/>
+                            <constraint firstItem="zQ5-D1-eOP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="UBh-TQ-gpK"/>
+                            <constraint firstItem="FlB-iM-CcH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="UoE-yi-fMX"/>
+                            <constraint firstItem="zQ5-D1-eOP" firstAttribute="top" secondItem="mWe-0T-1M0" secondAttribute="bottom" constant="10" id="kZe-Ee-C1z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="FlB-iM-CcH" id="FM4-H6-DlS"/>
+                        <outlet property="mapContainer" destination="zQ5-D1-eOP" id="HO6-QS-6sc"/>
+                        <outlet property="menuButton" destination="ZHa-J1-9Hz" id="Wvh-JN-QjO"/>
+                        <outlet property="titleLabel" destination="mWe-0T-1M0" id="T4u-RF-byO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowLeftIconLight" width="18" height="12"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
+        <namedColor name="backgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
