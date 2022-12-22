@@ -14,6 +14,7 @@ loader-message = "Procesando...\nespere un momento por favor.";
 // MARK: Authentication
 login-button-key = "Ingresar";
 fingerprint-login-button-key = "Ingresar con huella";
+fingerprint-faceid-login-button-key = "Ingresar con Face ID";
 email-text-key = "Correo electrónico";
 password-text-key = "Contraseña";
 title-login-label-key = "Ingresa tus datos para acceder";

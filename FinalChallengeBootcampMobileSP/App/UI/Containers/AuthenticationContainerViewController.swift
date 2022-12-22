@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 class AuthenticationContainerViewController: UIViewController {
   
@@ -18,6 +19,7 @@ class AuthenticationContainerViewController: UIViewController {
     
     configureLoginController()
     userSetup()
+    AuthenticationManager.shared.biometricType = getBiometricsName()
   }
   
   func configureLoginController() {
@@ -56,4 +58,25 @@ class AuthenticationContainerViewController: UIViewController {
     }
   }
   
+  func getBiometricsType() -> LABiometryType {
+      let context = LAContext()
+      var error: NSError?
+      guard context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) else {
+          return .none
+      }
+      return context.biometryType
+  }
+      
+  func getBiometricsName() -> String {
+      switch getBiometricsType() {
+      case .faceID:
+          return "FaceID"
+      case .touchID:
+          return "TouchID"
+      case .none:
+          return "Biometrics Unavailable"
+      @unknown default:
+          return "Unknown Biometrics Type"
+      }
+  }
 }

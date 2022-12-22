@@ -11,6 +11,8 @@ class AuthenticationManager {
   static var kEmailKey = "email"
   static let shared: AuthenticationManager = AuthenticationManager()
   
+  var biometricType: String?
+  
   var email: String? {
     set {
       saveEmail(newValue)

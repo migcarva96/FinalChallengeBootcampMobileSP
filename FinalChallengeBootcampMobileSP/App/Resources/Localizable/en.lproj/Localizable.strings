@@ -14,6 +14,7 @@ loader-message = "Processing...\nwait a moment please.";
 // MARK: Authentication
 login-button-key = "Login";
 fingerprint-login-button-key = "Login with fingerprint";
+fingerprint-faceid-login-button-key = "Login with Face ID";
 email-text-key = "Email";
 password-text-key = "Password";
 title-login-label-key = "Enter your data to access";

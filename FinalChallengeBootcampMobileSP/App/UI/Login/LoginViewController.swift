@@ -128,6 +128,11 @@ class LoginViewController: UIViewController, StoryboardInstantiable {
     fingerprintLoginButton.tintColor = UIColor(named: "primaryColor")
     fingerprintLoginButton.titleLabel?.font = UIFont(name: "Montserrat-Bold", size: 16)
     fingerprintIconImage.tintColor = UIColor(named: "primaryColor")
+    if AuthenticationManager.shared.biometricType == "FaceID" {
+      fingerprintIconImage.image = UIImage(systemName: "faceid")
+    } else {
+      fingerprintIconImage.image = UIImage(named: "fingerprintIcon")
+    }
   }
   
   private func setupLanguage() {
@@ -149,6 +154,11 @@ class LoginViewController: UIViewController, StoryboardInstantiable {
       touchidEmptyTitle = NSLocalizedString("touchid-empty-title",bundle: bundle!, comment: "")
       touchidEmptyMessage = NSLocalizedString("touchid-empty-message",bundle: bundle!, comment: "")
       touchidReasonMessage = NSLocalizedString("touchid-reason-message",bundle: bundle!, comment: "")
+      if AuthenticationManager.shared.biometricType == "FaceID" {
+        fingerprintLoginButton.setTitle(NSLocalizedString("fingerprint-faceid-login-button-key", bundle: bundle!, comment: ""), for: .normal)
+      } else {
+        fingerprintLoginButton.setTitle(NSLocalizedString("fingerprint-login-button-key", bundle: bundle!, comment: ""), for: .normal)
+      }
     } else {
       let path = Bundle.main.path(forResource: "es", ofType: "lproj")
       let bundle = Bundle(path: path!)
@@ -167,6 +177,11 @@ class LoginViewController: UIViewController, StoryboardInstantiable {
       touchidEmptyTitle = NSLocalizedString("touchid-empty-title",bundle: bundle!, comment: "")
       touchidEmptyMessage = NSLocalizedString("touchid-empty-message",bundle: bundle!, comment: "")
       touchidReasonMessage = NSLocalizedString("touchid-reason-message",bundle: bundle!, comment: "")
+      if AuthenticationManager.shared.biometricType == "FaceID" {
+        fingerprintLoginButton.setTitle(NSLocalizedString("fingerprint-faceid-login-button-key", bundle: bundle!, comment: ""), for: .normal)
+      } else {
+        fingerprintLoginButton.setTitle(NSLocalizedString("fingerprint-login-button-key", bundle: bundle!, comment: ""), for: .normal)
+      }
     }
   }
   
