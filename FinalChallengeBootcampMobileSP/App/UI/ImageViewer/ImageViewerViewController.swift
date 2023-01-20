@@ -48,6 +48,4 @@ class ImageViewerViewController: UIViewController {
       documentImage.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30),
     ])
   }
-  
-  
 }

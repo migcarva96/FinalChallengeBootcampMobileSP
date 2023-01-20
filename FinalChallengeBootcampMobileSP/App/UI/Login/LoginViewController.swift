@@ -210,6 +210,8 @@ class LoginViewController: UIViewController, StoryboardInstantiable {
         self.alert(title: nil, message: self.wrongPasswordMessage)
         return
       }
+      self.isLoading = false
+      self.passwordTextField.text = ""
       self.coordinator.navigateToHome()
     }
   }
